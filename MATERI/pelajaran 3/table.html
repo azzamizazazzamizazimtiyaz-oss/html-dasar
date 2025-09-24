@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 TABLE</title>
+    <style>
+        #table-basic {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        #table-basic td {
+            font-size: 16px;
+        }
+        #table-basic .bg-blue {
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   <h1>HTML 5 TABLE</h1>
+   <hr /> 
+   <h3>Table Dasar</h3>
+   <!-- <tr> : untuk membuat baris -->
+   <!-- <td> : untuk membuat data/kolom -->
+   <table border="1" id="table-basic">
+    <tr class="bg-blue">
+        <td>No</td>
+        <td>Nama</td>
+        <td>Asal</td>
+        <td>kewarganegaraan</td>
+    </tr>
+    <!-- shorcut: tr>td*3 -->
+    <tr>
+        <td>1.</td>
+        <td>Hanif</td>
+        <td>Bekasi, Cikarang</td>
+        <td>ID</td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>Bilal</td>
+        <td>Bekasi, Cibitung</td>
+        <td>ID</td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td>Aisy</td>
+        <td>Jaktim, Cipayung</td>
+        <td>ID</td>
+    </tr>
+   </table>
+
+
+   <h3>Table standard HTML 5</h3>
+   <!-- shortcut: table>thead+tbody+tfoot -->
+   <!-- <th> : untuk membuat data/kolom di thead -->
+   <table border="1" style="width: 70%;">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Tanggal</th>
+        <th>Nama Barang</th>
+        <th>Harga Barang</th>
+      </tr>
+    </thead>
+    <tbody>
+       <tr>
+         <td>1.</td>
+         <td>21/09/2025</td>
+         <td>Es Teh Desa</td>
+         <td>Rp 2.500</td>
+       </tr>
+       <tr>
+         <td>2.</td>
+         <td>22/09/2025</td>
+         <td>Gorengan</td>
+         <td>Rp 10.000</td>
+       </tr>
+       <tr>
+         <td>3.</td>
+         <td>23/09/2025</td>
+         <!-- rowspan: menggabungkan baris ke bawah -->
+         <td rowspan="2">Nasdang</td>
+         <td>Rp 10.000</td>
+       </tr>
+       <tr>
+         <td>4.</td>
+         <td>24/09/2025</td>
+         <!-- <td>Nasdang</td> -->
+         <td>Rp 10.000</td>
+       </tr>
+       
+    </tbody>
+    <tfoot>
+        <tr>
+         <!-- <td></td>
+         <td></td> -->
+         <!-- colspan: menggabungkan kolom -->
+         <td colspan="3"><b>Total Pengeluaran</b></td>
+         <td><b>Rp 32.500</b></td>
+        </tr>
+    </tfoot>
+   </table>
+</body>
+</html>
