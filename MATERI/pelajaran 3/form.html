@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 FORM</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+</head>
+<body>
+    <!-- tad main = div tapi lebih utama -->
+     <main class="container">
+    <h1>HTML 5 Form Tutorial</Form></h1>
+    <hr />
+    <form>
+      <div>
+         <!-- tips shourcat: input: [type-nya] -->
+         <label for="inputName">Nama Lengkap</label>
+         <input type="text" name="nama_lengkap" id="inputName">
+      <div>
+         <label for="inputage">Umur</label>
+         <input type="number" name="Umur" id="inputage" />
+      </div>
+         <label for="inputbio">Biografi</label>
+         <textarea name="biografi" id="inputBio"></textarea>       
+      </div>
+      <div>
+        <p>Jenis Kelamin</p>
+        <input type="radio" name="Jenis_Kelamin" id="inputlanang"/>
+        <label for="inputlanang">Laki-Laki</label>
+        <input type="radio" name="Jenis_Kelamin" id="inputwadon"/>
+        <label for="inputwadon">Prempuan</label>
+      </div>
+      <div>
+        <p>Hobi</p>
+        <input type="checkbox" name="hobi" id="inputmemancing">
+        <label for="inputmemancing">Mancing</label>
+        <input type="checkbox" name="hobi" id="inputmainbola">
+        <label for="inputmainbola">Main bola</label>
+        <input type="checkbox" name="hobi" id="inputRenang">
+        <label for="inputRenang">Berenang</label>
+        <input type="checkbox" name="hobi" id="inputngoding">
+        <label for="inputngoding">Ngoding</label>
+      </div>
+      <div>
+        <label for="inputkota">Asal Kota</label>
+        <select name="asal_nama" id="inputkota">
+          <option value="JKT">Jakarta</option>
+          <option value="SRG">Serang</option>
+          <option value="BKS">Bekasi</option>
+          <option value="SBY">Surabaya</option>
+          <option value="YOG">Yogyakarta</option>
+          <option value="BGR">Bogor</option>
+          <option value="PRJ">Purworejo</option>
+          <option value="BNDG">Bandung</option>
+        </select>
+      </div>
+      <div>
+        <label for="inputDate">Tanggal Lahir</label>
+        <input type="password" name="password" id="inputpas">
+      </div>
+      <div>
+        <label for="inputEmail">Alamat Email</label>
+        <input type="email" name="email" id="inputEmail">
+      </div>
+      <div>
+        <label for="input"></label>
+      </div>
+      <!-- action buttons -->
+      <!-- class grid untuk buat kolom -->
+      <div class="grid">
+        <!-- tips shourcut: button: [type-nya] -->
+        <button type="reset">batal</button>
+        <button type="submit">simpan</button>
+    </div>
+    </form>
+</body>
+</html>
