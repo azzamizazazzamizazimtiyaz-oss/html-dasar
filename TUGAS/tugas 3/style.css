@@ -2,41 +2,41 @@
 body {
       font-family: Arial, sans-serif;
       background-color: #f5f6fa;
-      margin: 0;
-      padding: 20px;
+      margin: 0;  /*untuk mengatur jarak luar elemen */
+      padding: 20px; /* untuk mengatur jarak dalam elemen */
       color: #333;
     }
 
     .container {
-      max-width: 800px;
-      margin: auto;
+      max-width: 800px; /* lebar maksimal suatu elemen. */
+       margin: auto; /*membuat elemen berada di tengah secara horizontal. */
     }
 
     /* Logo */
     .logo {
-      display: block;
-      margin: 0 auto;
-      width: 80px; /* atur sesuai ukuran logo */
+      display: block; /* membuat elemen berperilaku seperti “blok”. */
+      margin: 0 auto; /* mengatur margin atas dan bawah elemen menjadi 0, serta margin kiri dan kanan menjadi otomatis. */
+      width: 80px; /* mengatur lebar elemen */
     }
 
     /* Heading */
     h1 {
       text-align: center;
-      color: #1e3a8a; /* biru navy */
+      color: #1e3a8a;
       margin: 10px 0 5px 0;
     }
 
     h2 {
       text-align: center;
-      color: #6b7280; /* abu-abu */
-      font-weight: normal;
-      margin-top: 0;
+      color: #6b7280;
+      font-weight: normal; /* mengatur ketebalan font elemen. */
+      margin-top: 0;  /* mengatur jarak atas elemen menjadi 0. */
     }
 
     hr {
       margin: 20px 0;
-      border: none;
-      border-top: 1px solid #e5e7eb;
+      border: none;/* hapus garis tepi pada elemen. */
+      border-top: 1px solid #e5e7eb; /* mengatur garis atas elemen. */
     }
 
     /* navigasi */ 
@@ -46,15 +46,15 @@ body {
     }
 
     .navbar a {
-      display: inline-block;
+      display: inline-block; /* membuat elemen berperilaku seperti “blok” tetapi tetap berada dalam satu baris. */
       padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 20px;
+      text-decoration: none; /* menghapus garis bawah pada tautan. */
+      border-radius: 20px; /* mengatur sudut elemen agar melengkung. */
       background: #fff;
-      border: 1px solid #ddd;
+      border: 1px solid #ddd; /* mengatur garis tepi pada elemen. */
       color: #333;
       font-weight: 500;
-      transition: all 0.3s;
+      transition: all 0.3s; /* mengatur transisi pada semua properti elemen selama 0.3 detik. */
     }
    
     .navbar a.active,
@@ -67,9 +67,9 @@ body {
     .card {
       background: #fff;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);  /* mengatur bayangan pada elemen. */ 
       padding: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 20px;  /* mengatur jarak bawah elemen. */
     }
 
     .card h3 {
@@ -80,19 +80,19 @@ body {
     .highlight {
       font-weight: bold;
       color: #1e3a8a;
-      border-left: 4px solid #fbbf24; /* kuning */
-      padding-left: 8px;
+      border-left: 4px solid #fbbf24;  /* mengatur garis kiri elemen. */
+      padding-left: 8px; /* mengatur jarak dalam elemen di sebelah kiri. */
       margin-bottom: 10px;
     }
 
     /* Avatar */
     .avatar {
       display: block;
-      margin-left: 15px;
+      margin-left: 15px; 
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      object-fit: cover;
+      object-fit: cover; /* mengatur bagaimana konten elemen di dalam elemen. */
     }
 
     /* Link */
@@ -102,11 +102,11 @@ body {
       margin-top: 30px;
       font-weight: bold;
       color: #1e40af;
-      text-decoration: none;
+      text-decoration: none; /* menghapus garis bawah pada tautan. */
     }
 
     .link-biodata:hover {
-      text-decoration: underline;
+      text-decoration: underline; /* menambahkan garis bawah pada tautan saat dihover. */
     }
 
 
@@ -141,7 +141,7 @@ body {
     /* ----------- style jadwal html -----------  */
     table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: collapse; /* menghilangkan jarak antara border sel tabel. */
   margin: 20px 0;
   font-family: Arial, sans-serif;
   background: #fff;
@@ -187,9 +187,9 @@ tr:nth-child(even) {
 
     .card-container {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: wrap; /* memungkinkan elemen anak untuk membungkus ke baris berikutnya jika tidak muat dalam satu baris. */
       gap: 20px;
-      justify-content: center;
+      justify-content: center; /* mengatur elemen anak agar berada di tengah secara horizontal. */
       margin-top: 10px;
     }
 
@@ -198,19 +198,19 @@ tr:nth-child(even) {
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.15);
-      overflow: hidden;
+      overflow: hidden; /* menyembunyikan konten yang melampaui batas elemen. */
       text-align: center;
-      transition: transform 0.3s;
+      transition: transform 0.3s; /* mengatur transisi pada properti transform elemen selama 0.3 detik. */
     }
 
     .card:hover {
-      transform: scale(1.03);
+      transform: scale(1.03); /* memperbesar elemen sebesar 3% saat dihover. */
     }
 
    .galeri-card img {
       width: 100%;
       height: 150px;
-      object-fit: cover;
+      object-fit: cover; /* mengatur bagaimana konten elemen di dalam elemen. */
       display: block;
     }
 
