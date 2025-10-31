@@ -314,6 +314,7 @@ tr:nth-child(even) {
     }
 
     /* responsif */
+    /* hp */
     @media screen and (max-width: 600px) {
       .card-container {
         flex-direction: column; 
@@ -330,6 +331,8 @@ tr:nth-child(even) {
         gap: 10px;
       }
     }
+
+    /* tablet */
     @media (min-width: 600px) and (max-width: 1023px) {
       .navbar ul li {
         flex-direction: row;
