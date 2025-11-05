@@ -346,11 +346,11 @@ tr:nth-child(even) {
 /* HP (<= 600px) */
 @media (max-width: 600px) {
   body {
-    padding: 10px;  /* memberi ruang dalam di sekitar isi; mencegah elemen menempel ke tepi. */
+    padding: 10px;
   }
 
   h1 {
-    font-size: 22px;    /* mengatur ukuran font elemen. */
+    font-size: 22px;
   }
 
   h2 {
