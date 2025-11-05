@@ -346,11 +346,11 @@ tr:nth-child(even) {
 /* HP (<= 600px) */
 @media (max-width: 600px) {
   body {
-    padding: 10px;
+    padding: 10px;  /* memberi ruang dalam di sekitar isi; mencegah elemen menempel ke tepi. */
   }
 
   h1 {
-    font-size: 22px;  
+    font-size: 22px;    /* mengatur ukuran font elemen. */
   }
 
   h2 {
@@ -360,13 +360,14 @@ tr:nth-child(even) {
   .navbar ul {
     flex-direction: column; /* mengubah menu dari baris horizontal ke kolom vertikal 
     (menu vertikal lebih cocok di ponsel). */
-    align-items: center;
+    align-items: center;  /* mengatur elemen anak dalam flexbox 
+    agar berada di tengah secara horizontal. */
   }
 
   .navbar a {
     padding: 8px 14px;
     font-size: 13px;
-    display: block;
+    display: block;   /* membuat elemen berperilaku seperti “blok”. */
   }
 
   .avatar, .profile-img {
