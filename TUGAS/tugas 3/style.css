@@ -60,7 +60,6 @@ body {
       color: #111827;
       font-size: 14px;
       background: #fff;
-      display: block;
     }
     .navbar a.active {
       background: #1b3a8a;
@@ -313,33 +312,93 @@ tr:nth-child(even) {
       color: white;
     }
 
-    /* responsif */
-    /* hp */
-    @media screen and (max-width: 600px) {
-      .card-container {
-        flex-direction: column; 
-        align-items: center;  /* mengatur elemen anak agar berada di tengah secara horizontal. */
-      }
-      .card {
-        width: 80%;
-      }
-      .navbar ul li {
-        flex-direction: column;
-        flex-shrink: 1;
-        flex-grow:  1;
-        flex-basis: 100%;
-        gap: 10px;
-      }
-    }
+ 
+    /* ========================================================= */
+/* ===================  RESPONSIVE DESIGN  ================== */
+/* ========================================================= */
 
-    /* tablet */
-    @media (min-width: 600px) and (max-width: 1023px) {
-      .navbar ul li {
-        flex-direction: row;
-        flex-shrink: 1;
-        flex-grow:  1;
-        flex-basis: 40% - 90px;
-        gap: 10px;
-      }
+/* Tablet (<= 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 90%;   /* batasi lebar kontainer agar tidak memenuhi layar penuh */
+    padding: 10px;  /* memberi ruang dalam di sekitar isi; mencegah elemen menempel ke tepi. */
+  }
 
-    }
+  .navbar ul {
+    gap: 8px;   /* mengatur jarak antar elemen dalam flexbox atau grid. */
+  }
+
+  .navbar a {
+    padding: 8px 14px;
+    font-size: 13px;  /* mengatur ukuran font elemen. */
+  }
+
+  .video iframe {
+    width: 100%;  /* mengatur lebar elemen agar sesuai dengan lebar elemen induknya. */
+    height: 300px;  /* mengatur tinggi elemen. */
+  }
+
+  .galeri-card {
+    width: 45%; /* mengatur lebar elemen sebesar 45% dari elemen induknya. */
+  }
+}
+
+/* HP (<= 600px) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 22px;  
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .navbar ul {
+    flex-direction: column; /* mengubah menu dari baris horizontal ke kolom vertikal 
+    (menu vertikal lebih cocok di ponsel). */
+    align-items: center;
+  }
+
+  .navbar a {
+    padding: 8px 14px;
+    font-size: 13px;
+    display: block;
+  }
+
+  .avatar, .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .galeri-card {
+    width: 100%;
+  }
+
+  .video iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  table, th, td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+
+  .btn-group {
+    flex-direction: column; /* mengubah arah elemen anak dalam flexbox menjadi kolom vertikal. */
+    align-items: stretch; /* membuat elemen anak dalam flexbox mengambil 
+    lebar penuh dari elemen induknya. */
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
