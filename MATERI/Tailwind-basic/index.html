@@ -1,4 +1,5 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -6,24 +7,57 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <!-- container = area dengan jarak di kiri dan kanan -->
-    <!--  -->
-    <div class="container mx-auto p-4 bg-blue-200">
-        <h1 class="text-6xl font-bold underline mb-5">
-          Hello world!
-        </h1>
-        <!-- styling buttons -->
-        <!-- hover => saat elemen di arahkan -->
-        <!-- rounded-full => border radius bulat full -->
-        <!-- px-5 => padding x (life right) -->
-        <!-- py-2 => padding y (top bottom) -->
-        <!-- text-sm => text small (kecil) -->
-        <!-- font-semibold =>  -->
-        <button type="button" class="bg-green-600
-        hover:bg-red-700 text-white hover:text-black
-        rounded-full px-5 py-2 text-sm font-semibold">
-          Simpan Data
-        </button>
-   </div>
+    <div class="container mx-auto p-4 bg-blue-300">
+      <h1 class="text-3xl font-bold underline">Hello world!</h1>
+      <br />
+      <button
+        type="button"
+        class="bg-green-500 hover:bg-green-700 text-white rounded-full px-5 py-2 text-sm leading-5 font-semibold"
+      >
+        Simpan Data
+      </button>
+
+      <br /><br />
+      <!-- navbar menu -->
+      <div class="flex flex-col md:flex-row gap-4">
+        <div class="bg-green-200 p-4 flex-1">box 1</div>
+        <div class="bg-green-300 p-4 flex-1">box 2</div>
+        <div class="bg-green-400 p-4 flex-1">box 3</div>
+      </div>
+
+      <br /><br />
+      <!-- GRID BASIC DI TAILWAND -->
+      <!-- wajib ada class grid => display: grid -->
+      <!-- grid-cols: atur jumlah kolom -->
+      <div class="grid grid-cols-4 gap-6 p-6">
+        <div class="bg-red-300 p-4 rounded-md">card 1</div>
+        <div class="bg-orange-300 p-4 rounded-md">card 2</div>
+        <div class="bg-yellow-300 p-4 rounded-md">card 3</div>
+        <div class="bg-teal-300 p-4 rounded-md">card 4</div>
+      </div>
+
+      <!-- navbar menu -->
+      <header>
+        <div class="flex mx-auto p-4 bg-indigo-800 justify-between rounded-md">
+          <div class="text-xl text-black">warung semesta</div>
+          <!-- navigasi utama -->
+          <nav class="hidden md:flex gap-6 text-sm">
+            <a href="a" class="bg-indigo-400 text-white px-4 py-1 rounded-md"
+              >Home
+            </a>
+            <a href="a" class="bg-indigo-400 text-white px-4 py-1 rounded-md"
+              >Galeri
+            </a>
+            <a href="a" class="bg-indigo-400 text-white px-4 py-1 rounded-md"
+              >Kontak
+            </a>
+          </nav>
+
+          <!-- hamburger menu , muncul saat di mobile -->
+          <button class="md:hidden text-2xl text-white">☰</button>
+        </div>
+      </header>
+    </div>
   </body>
 </html>
+
